@@ -40,7 +40,7 @@
                            "message" message
                            "backtrace" stack-trace
                            "exception_class" class}
-              "client" {"name" "Newfound Research API"
+              "client" {"name" "exceptional-clj"
                         "version" "0.0.1"
                         "protocol_version" 6}}]
     (json/json-str body)))
@@ -50,7 +50,7 @@
                             {:body (to-json e)
                              :headers {"Content-Type" "application/json"
                                        "Accept" "application/json"
-                                       "User-Agent" "expojure/1.0.0-SNAPSHOT"}}))]
+                                       "User-Agent" "exceptional-clj/1.0.0-SNAPSHOT"}}))]
         (client/post
          (str "http://api.getexceptional.com/api/errors?api_key="
               exceptional-api-key
